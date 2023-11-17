@@ -36,7 +36,7 @@ def dequeue():
         value = queue[head].data
         free = head
         head = queue[head].next
-        if head is None:
+        if head == -1:
             head = -1
             tail = -1
         return value
