@@ -19,10 +19,9 @@ def enqueue(value):
     global tail, head, free
     if tail == len(queue) - 1:
         print("Overflow")
-    else:
-        queue[tail + 1].data = value
-        queue[tail].next = tail + 1
+    else:
         tail += 1
+        queue[tail].data = value
         free = queue[tail].next
         if head == -1:
             head = 0
