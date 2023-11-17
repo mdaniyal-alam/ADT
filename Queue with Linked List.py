@@ -44,6 +44,7 @@ def dequeue():
 
 # main program
 
+init_queue()
 while True:
     print('1. Enqueue')
     print('2. Dequeue')
