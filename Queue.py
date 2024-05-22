@@ -22,8 +22,8 @@ def enqueue(value):
         tail = 0
     else:
         tail += 1
-        Q[tail] = value
-        Qsize += 1
+    Q[tail] = value
+    Qsize += 1
 
 
 def dequeue():
@@ -34,8 +34,8 @@ def dequeue():
         head = 0
     else:
         head += 1
-        Qsize -= 1
-        return Q[head]
+    Qsize -= 1
+    return Q[head]
 
 choice = -1
 while choice != 5:
