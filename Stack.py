@@ -1,10 +1,9 @@
-size = int(input("Enter the size of the stack: "))
-stack = [None] * size
+stack = [None] * 5
 top = -1
 
 
 def push(value):
-    global stack, top
+    global top
     if top == len(stack) - 1:
         print("Stack Overflow")
     else:
@@ -13,7 +12,7 @@ def push(value):
 
 
 def pop():
-    global stack, top
+    global top
     if top == -1:
         print("Stack Underflow")
     else:
